@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do List</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="note-container" role="main" aria-label="Todo List">
+        <header class="header">
+          <h2 id="todo-title">Todo List</h2>
+          <img src="/images/icon.png" alt="Todo List Icon" aria-hidden="true" />
+        </header>
+        <form class="task_input" autocomplete="off" onsubmit="return false;">
+          <div class="input-group">
+            <input
+              type="text"
+              class="input"
+              placeholder="Enter a task"
+              aria-label="Task input"
+              aria-describedby="addbtn"
+            />
+            <button class="btn" type="button" id="addbtn" aria-label="Add task">
+              Add
+            </button>
+          </div>
+        </form>
+        <nav class="task-list" aria-label="Task list">
+          <ul></ul>
+        </nav>
+      </div>
+    </div>
+
+    <script src="/JS/script.js"></script>
+    <footer>
+       Developed by: <b> Lidet Admassu</b> <br>  &copy; 2025 Todo List App. All rights reserved.
+    </footer>
+  </body>
+</html>
